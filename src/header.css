@@ -1,0 +1,120 @@
+.logo{
+min-width: 40px;
+width: 50px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    box-shadow: 0px 3px 20px rgb(0,0,0,0.1);
+  
+  }
+  
+  .inputBox{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 3px 20px rgb(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 8px 15px;
+    width: 165px;
+  }
+  
+  .inputBox .searchIcon{
+    color:gray ;
+    font-size: 20px;
+  }
+  
+  .inputBox input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: gray;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .shoppingCart{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .shoppingCart .cart{
+    font-size: 30px;
+    color:rgb(252, 184, 100)
+  }
+  .companyProfile .companyName{
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 500;
+    display: none;
+    align-items: center;
+  }
+  
+  .shoppingCart .cart-content{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(251, 76, 76);
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+  }
+  
+  .shoppingCart .cart-content p{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+  }
+  
+  .shoppingCart .noCartItem {
+    display: none;
+  }
+  
+  .companyProfile{
+    display: flex;
+    align-items: center;
+  
+  }
+  .companyProfile .imgBox{
+    width: 55px;
+    height: 55px;
+    min-width: 40px;
+    border-radius: 100vw;
+    background-color:rgb(239, 238, 238) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .companyProfile .imgBox .companyPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .toggleMenu{
+    transform: rotate(90deg);
+  }
+  .toggleMenu .toggleIcon{
+    color:rgb(252, 184, 100)
+  }

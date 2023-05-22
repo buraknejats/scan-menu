@@ -1,0 +1,17 @@
+.itemContent .addtoCart{
+    background-color: #ff890b;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  .itemContent .addtoCart .MuiSvgIcon-root{
+    color: #090808;
+    font-size: 16px;
+  
+  }

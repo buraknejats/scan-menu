@@ -1,0 +1,581 @@
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(244, 230, 216);
+    overflow-x: hidden;
+  }
+  
+  .App::-webkit-scrollbar{
+    display: none;
+  }
+  
+  
+  
+  
+  main{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+  } 
+  
+  .mainContainer{ 
+    width: 100%;
+    height: auto;
+    background-color: #faf9fb;
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+  .banner{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    background: url(https://img.freepik.com/free-vector/abstract-wavy-background-light-brown_1108-592.jpg?w=1380&t=st=1680354668~exp=1680355268~hmac=3e0fe97ad85705d5d8bcf0976696dcf7cbbf3b70e153100095c51c3f94c5d3a9) no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  
+  .bannerImg{
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    bottom: -10px;
+    width: 150px;
+  }
+  
+  .bannerContent{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .bannerContent h3{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(137, 103, 103)
+  
+  }
+  
+  .bannerContent p{
+    font-size: 14px;
+    color: rgb(58, 52, 43);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 5px 0;
+  
+  }
+  
+  .bannerContent p span {
+    color: rgba(255, 104, 104, 0.83);
+    font-weight: 600;
+  }  
+  
+  .bannerContent a {
+  background-color: #ff890b;
+  padding: 5px 15px;
+  border-radius: 100vw;
+  color:#faf9fb;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  }
+  
+  .bannerContent a:hover{
+    box-shadow: 0px 5px 20px rgb(0, 0, 0, 0.15);
+    transition: 0.5;
+  }
+  
+  /* dish container*/
+  .dishContainer{
+    width: 100%;
+    padding: 10px 0;
+  
+  }
+  .menuCard{
+  width: 100%;
+  }
+  
+  .subMenuContainer .viewAll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subMenuContainer h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2b3c;
+  }
+  
+  .subMenuContainer .viewAll p{
+    font-size: 12px;
+    color: #ff890b;
+    font-weight: 400;
+  }
+  
+  .subMenuContainer .viewAll i{
+    background-color: #ff890b;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subMenuContainer .viewAll i .MuiSvgIcon-root{ 
+  font-size: 14px;
+  }
+  
+  /*menu-kategori */
+  .rowContainer{
+  
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 10px 0;
+    padding: 10px 0;
+  } 
+  
+  .rowContainer::-webkit-scrollbar{
+    display: none;
+  }
+  .rowMenuCard{
+    width: 80px;
+    min-width: 80px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .rowMenuCard:hover, .rowMenuCard.active{
+    background-color: #ff890b ;
+  }
+  
+  .rowMenuCard .imgBox{
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 100vw;
+  background-color: #ff890b;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+  }
+  
+  .rowMenuCard:hover .imgBox,
+  .rowMenuCard.active .imgBox{
+    background-color: #fff;
+  }
+  
+  .rowMenuCard .imgBox img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .rowMenuCard:hover .imgBox img,
+  .rowMenuCard.active .imgBox img{
+    width: 90%;
+    height: 90%;
+    transition: 0.5s;
+  }
+  .rowMenuCard h3{
+    color: #2a2b3c;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  
+  .rowMenuCard:hover h3,
+  .rowMenuCard.active h3{
+    color: #faf9fb;
+  }
+  
+  .rowMenuCard .loadMenu{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ff890b;
+    transition: 0.5s;
+  }
+  
+  .rowMenuCard:hover .loadMenu,
+  .rowMenuCard.active .loadMenu{
+    background-color: #fff;
+  }
+  .rowMenuCard .loadMenu .MuiSvgIcon-root{
+    font-size: 18px;
+    color: #faf9fb;
+  }
+  .rowMenuCard:hover .loadMenu .MuiSvgIcon-root,
+  .rowMenuCard.active .loadMenu .MuiSvgIcon-root{
+    color: #ff890b;
+  }
+  
+  /* itemcard*/
+  
+  .dishContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  .itemCard{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px ;
+  }
+  .itemCard .imgBox{
+    width: 100px;
+    height: 100px;
+    border-radius: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    top: -10px;
+  }
+  
+  .itemCard .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .itemContent{
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 50px;
+    width: 100%;
+  }
+  
+  .itemImg{
+    position: absolute;
+    top: 0;
+    width: 60%;
+  }
+  .itemContent .itemName{
+    font-size: 16px;
+  }
+  
+  .itemContent .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .itemContent .bottom .rating .MuiSvgIcon-root{
+    font-size: 16px;
+  }
+  .itemContent .bottom .price{
+    font-size: 16px;
+  }
+  
+  .itemContent .bottom .price span{
+    font-size: 14px;
+  }
+  
+  .itemContent .addtoCart{
+    background-color: #ff890b !important;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  .itemContent .addtoCart .MuiSvgIcon-root{
+    color: #090808;
+    font-size: 16px;
+  
+  }
+  .dishitemContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  
+  /* right menu*/
+  
+  .rightMenu{
+    width: 350px;
+    height: calc(100% - 60px);
+    background-color: rgb(254, 229, 196);
+    position: fixed;
+    right: 0;
+    top: 55px;
+    z-index: 105;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    transform: translate(200%);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow:0px 3px 20px rgb(0, 0, 0, 0.1);
+  }
+  .rightMenu.active{
+    transform: translateX(0%);
+  }
+  
+  .debitCardContainer{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .debitCard{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    min-width: 300px;
+    min-height: 170px;
+  border-radius: 15px;
+  }
+  .debitCard::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#f8901c ;
+    transform: rotate(5deg);
+    border-radius: 15px;
+    z-index: -2;
+  }
+  .debitCard::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(35deg, rgba(255, 255,2500, 0.3),rgba(255, 255,2500, 0.1) ) ;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    border:1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 150x;
+    
+  }
+  
+  .cardGroup{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-logo, .card-chip, .card-number, .card-name, .card-date, .card-cvv{
+  position: absolute;
+  
+  }
+  
+  .card-logo{
+    width: 60px;
+    top: 30px;
+    right: 30px;
+    height:auto ;
+  
+  }
+  .card-chip{
+    width: 40px;
+    height: auto;
+    top: 50px;
+    left: 30px;
+  }
+  
+  .card-number, .card-name,.card-date, .card-cvv{
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+  
+  }
+  
+  .card-number{
+    left: 30px;
+    bottom: 60px;
+  }
+  
+  .card-name{
+    font-size: 12px;
+    bottom: 30px;
+    left: 30px;
+  }
+  
+  .card-date{
+    font-size: 12px;
+    bottom: 30px;
+    right: 60px;
+    color: #fff;
+  }
+  .card-cvv{
+    font-size: 12px;
+    bottom: 10px;
+    right: 60px;
+    color: #fff;
+  }
+  
+  .cartCheckOutContainer{
+     width: 100%;
+     min-width: 320px;
+  }
+  .cartContainer{
+    width: 100%;
+    min-height: 250px;
+    max-height: 280px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+  }
+  
+  .cartContainer::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .cartItem{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  .cartItem .imgBox{
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #faf9fb;
+    border-radius: 15px;
+  
+  }
+  .cartItem .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .cartItem .itemSection {
+    margin-left: 10px;
+  }
+  
+  .cartItem .itemSection .itemName{
+    font-size: 16px;
+    color: rgb(15, 15, 63)
+  }
+  
+  .cartItem .itemSection .itemQuantity{
+    font-size: 16px;
+    color: #2a2b3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+  }
+  
+  .cartItem .itemSection .itemQuantity span{
+  color: #f8901c;
+  }
+  
+  .cartItem .itemSection .itemQuantity .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 60px;
+  }
+  
+  .cartItem .itemSection .itemQuantity .quantity .itemRemove,
+  .cartItem .itemSection .itemQuantity .quantity .itemRemove  {
+    color: #2a2b3c;
+    font-size: 24px;
+  }
+  
+  .cartItem .itemPrice{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2b3c;
+    margin-left: auto;
+  }
+  
+  .cartItem .itemPrice .tl {
+    font-size: 12px;
+    color: #2a2b3c;
+  }
+  
+  .cartItem .itemPrice .itemPriceValue {
+    font-size: 16px;
+    color: #2a2b3c ;
+  }
+  
+  .totalSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    margin: 15px 0px;
+  }
+  .totalSection h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a2b3c;
+  }
+  
+  .totalSection p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a2b3c;
+  }
+  
+  .totalSection p span{
+    font-size: 14px;
+  }
+  
+  .checkOut{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f8901c;
+    border-radius: 100vw;
+    color: #faf9fb;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  
